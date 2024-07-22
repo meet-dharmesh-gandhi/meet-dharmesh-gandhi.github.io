@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Properties</title>
+    <link rel="stylesheet" href="sell.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a64c0c2b08.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="box2" id="box2">
+    <h4>Your Profile</h4>
+    <hr>
+    <p class="email">Email :- <a id="userEmail"></a></p>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">LS Real Estate</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"><i class="fa-solid fa-cart-shopping cart"></i></a>
+          </li>
+          <li class="nav-item">
+            <div class="box1" id="box1">
+                <img id="userProfilePicture" src="" alt="">
+            </div>
+        </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+<section class="detailsSection">
+  <h1 class="heading">Create your <span class="sampleCard">CARD</span></h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <form class="row g-3 rows2">
+          <h3 class="yourDetails">Your Details</h3>
+          <div class="col-md-6">
+            <label for="inputFirstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="inputFirstName" placeholder="First Name" required>
+          </div>
+          <div class="col-md-6">
+            <label for="inputSecondName" class="form-label">Second Name</label>
+            <input type="text" class="form-control" id="inputSecondName" placeholder="Second Name" required>
+          </div>
+          <div class="col-12">
+            <label for="inputEmail" class="form-label">Registered Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Enter your registered email" required>
+          </div>
+          <div class="col-12">
+            <label for="inputContactNo" class="form-label">Contact No.</label>
+            <input type="number" class="form-control" id="inputContactNo" placeholder="Your contact number" required>
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Area</label>
+            <input type="text" class="form-control" id="inputArea" placeholder="Your area" required>
+          </div>
+          <div class="col-md-6">
+            <label for="inputState" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="Los Santos" disabled>
+          </div>
+          <h3 class="propertyDetails">Property Details</h3>
+          <div class="col-md-12">
+            <label for="inputPropertyCategory" class="form-label">Property Category</label>
+            <div class="input-group">
+              <input type="text" class="form-control propertyCategoryInput" aria-label="Text input with dropdown button" placeholder="Select your Property Category from dropdown">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+              <ul class="dropdown-menu dropdown-menu-end propertyCategoryList">
+                <li><a class="dropdown-item">Mansion</a></li>
+                <li><a class="dropdown-item">Penthouse</a></li>
+                <li><a class="dropdown-item">Apartment</a></li>
+                <li><a class="dropdown-item">Other</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 otherCategory">
+            <label for="inputOtherCategory" class="form-label">If selected other, enter other category</label>
+            <input type="text" class="form-control" id="inputOtherCategory" placeholder="Other category" required>
+          </div>
+          <div class="col-md-6">
+            <label for="inputPropertyName" class="form-label">Property Name</label>
+            <input type="text" class="form-control" id="inputPropertyName" placeholder="Your property name" required>
+          </div>
+          <div class="col-md-6">
+            <label for="inputConfiguration" class="form-label">Configuration</label>
+            <input type="number" class="form-control" id="inputConfiguration" placeholder="Enter number of BHK" required>
+          </div>
+          <div class="col-12">
+            <label for="inputLocation" class="form-label">Property Location (In short)</label>
+            <input type="text" class="form-control" id="inputLocation" placeholder="Ex. :- Vinewood Hills, Near XYZ, Los Santos" required>
+          </div>
+          <div class="col-6">
+            <label for="inputPropertyState" class="form-label">Property State</label>
+            <div class="input-group">
+              <input type="text" class="form-control propertyStateInput" aria-label="Text input with dropdown button" placeholder="Select state from dropdown">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+              <ul class="dropdown-menu dropdown-menu-end propertyStateList">
+                <li><a class="dropdown-item">Sale</a></li>
+                <li><a class="dropdown-item">Rent</a></li>
+                <li><a class="dropdown-item">Both</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6">
+            <label for="inputPrice" class="form-label">Price</label>
+            <input type="number" class="form-control" id="inputPrice" placeholder="Enter your expected price" required>
+          </div>
+          <div class="col-12">
+            <label for="inputPropertyArea" class="form-label">Property Area</label>
+            <input type="number" class="form-control" id="inputPropertArea" placeholder="Enter the total area of your property">
+          </div>
+          <h3 class="insertImages">Insert Images</h3>
+          <h4 class="exterior">Exterior</h4>
+          <div class="col-lg-6">
+            <label for="formFile" class="form-label">Front View</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          <div class="col-lg-6">
+            <label for="formFile" class="form-label">Back View</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          <div class="col-lg-12">
+            <label for="formFile" class="form-label">Side View</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          <h4 class="interior">Interior</h4>
+          <div class="col-lg-6">
+            <label for="formFile" class="form-label">Interior 1</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          <div class="col-lg-6">
+            <label for="formFile" class="form-label">Interior 2</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>  
+        </form>
+      </div>
+      <div class="col-lg-5">
+        <div class="card" id="card1">
+          <img src="" alt="" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Example Mansion</h5>
+            <p class="card-price">$400,000</p>
+            <p class="location">Example Location</p>
+            <p class="property-type">Mansion</p>
+            <hr>
+            <div class="details">
+              <i class="fa-solid fa-bed" aria-hidden="true"></i>
+              <p class="bedrooms">
+                <span class="num1">x</span>
+                Bedrooms
+              </p>
+              <i class="fa-solid fa-bath" aria-hidden="true"></i>
+              <p class="bathrooms">
+                <span class="num2">x</span>
+                Bathrooms
+              </p>
+              <i class="fa-solid fa-chart-area" aria-hidden="true"></i>
+              <p class="area">
+                <span class="num3">xyz</span>
+                Sq Feet
+              </p>
+            </div>
+            <hr>
+            <a href="" class="btn btn-primary btn1">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="propertyDescription">
+  <div class="container">
+    <div class="row">
+      <h3 class="heading1">Property Description</h3>
+      <div class="col-lg-12">
+        <div class="col-lg-12">
+          <label for="formFile" class="form-label">Property Decription for Card</label>
+          <textarea class="form-control" placeholder = "Enter description in 20-30 words only" placeid="floatingTextarea2" style="height: 100px"></textarea>
+        </div>
+        <h4 class="detailedDescription">Detailed Description</h4>
+        <p><span class="select">(Select any one description from below or write your own)</p>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Luxury Features</button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <p>1) Experience luxury living at its finest with this stunning 5 BHK estate priced at $12.5 million. This property offers residents unparalleled access to the finest amenities and breathtaking views.</p>
+                <hr>
+                <p>2) Discover the epitome of luxury with this exquisite 6 BHK villa priced at $15 million. This residence offers breathtaking views and proximity to elite entertainment spots.</p>
+                <hr>
+                <p>3) Experience unparalleled elegance at this magnificent 4 BHK property priced at $10 million. This home offers lavish interiors and easy access to upscale shopping and dining.</p>
+                <hr>
+                <p>4) Indulge in the ultimate luxury with this grand 7 BHK estate priced at $20 million. This property provides stunning views and top-notch security.</p>
+                <hr>
+                <p>5) Enjoy seaside luxury at this beautiful 5 BHK property priced at $13 million. This home offers private beach access and spectacular oceanfront living.</p>
+                <hr>
+                <p>6) Elevate your lifestyle with this sleek 4 BHK residence priced at $11 million. This property provides panoramic views and is within walking distance of premier business and cultural centers.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">Overall Area</button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                <p>1)  Spanning an expansive area, this Residence showcases exquisite craftsmanship and blends luxury seamlessly with practicality, designed by esteemed architects.
+                <hr>
+                <p>2) Crafted by celebrated builders, this Estate offers refined interiors, bespoke finishes, and advanced technology, harmonizing style with everyday functionality.
+                <hr>
+                <p>3) Spread across a substantial area, this Villa stands as a masterpiece of design, featuring premium materials, artisanal craftsmanship, and state-of-the-art smart home integration for modern living.
+                <hr>
+                <p>4) Encompassing a substantial footprint, this Villa showcases premium materials, artisanal details, and innovative smart home features, providing a sanctuary of elegance and modern convenience in every corner.
+                <hr>
+                <p>5) Designed with meticulous attention to detail, this Residence blends luxury and functionality seamlessly. Crafted by skilled architects, it features refined interiors and state-of-the-art technology.
+                <hr>
+                <p>6) Crafted with precision, this Residence harmonizes luxury and practicality flawlessly. Designed by renowned architects, it offers refined interiors and cutting-edge technology, setting a new standard in upscale living.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">Interior Details</button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                <p>1) Indulge in unparalleled luxury with state-of-the-art amenities including a private cinema, a fully equipped fitness center, and a serene infinity pool with ocean views. Immerse yourself in the landscaped gardens, ideal for relaxation and entertaining guests.
+                <hr>
+                <p>2) Experience ultimate comfort with exceptional amenities such as a personal movie theater, a comprehensive gymnasium, and an infinity pool that overlooks the tranquil ocean. The beautifully landscaped gardens offer a peaceful retreat for relaxation and social gatherings.
+                <hr>
+                <p>3) Enjoy luxurious living with outstanding amenities like a private cinema, a modern fitness facility, and an infinity pool that provides breathtaking ocean views. Escape to the meticulously landscaped gardens, perfect for unwinding and hosting gatherings.
+                <hr>
+                <p>4) Embrace luxury living with unparalleled amenities such as a private theater, a fully equipped gym, and an infinity pool with sweeping ocean vistas. Delight in the meticulously maintained gardens, designed for relaxation and entertaining guests.
+                <hr>
+                <p>5) Discover exceptional living with deluxe amenities including a private movie theater, a state-of-the-art gym, and an infinity pool offering stunning ocean views. Experience tranquility in the beautifully landscaped gardens, perfect for leisure and socializing.
+                <hr>
+                <p>6) Luxuriate in top-tier amenities like a private cinema, a comprehensive fitness center, and an infinity pool with panoramic ocean views. Retreat to the lush gardens, meticulously designed for relaxation and hosting memorable gatherings.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">Extra Amenities</button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+              <div class="accordion-body">
+                <p>1) Additional amenities include a private elevator, ample secure parking, and round-the-clock security for complete peace of mind. Situated in a prime location, enjoy easy access to upscale shopping, gourmet dining, and vibrant nightlife, enhancing your luxurious urban lifestyle.
+                <hr>
+                <p>2) Enhance your lifestyle with exclusive features such as a private elevator, secure parking facilities, and 24/7 security services. Located centrally, indulge in nearby upscale shopping, fine dining options, and a dynamic nightlife scene, elevating your urban living experience.
+                <hr>
+                <p>3) Enjoy added conveniences like a private elevator, secure parking for multiple vehicles, and comprehensive security measures. Positioned in a central locale, take advantage of proximity to high-end retail outlets, exceptional dining choices, and exciting nightlife venues, perfect for a sophisticated urban lifestyle.
+                <hr>
+                <p>4) Discover enhanced living with amenities including a private elevator, secure parking options, and continuous security monitoring. Nestled in a bustling area, relish in close proximity to premier shopping venues, exquisite dining establishments, and lively nightlife spots, offering an upscale urban living atmosphere.
+                <hr>
+                <p>5) Experience elevated living with features such as a private elevator, secure parking accommodations, and 24/7 security services. Ideally situated, enjoy convenient access to exclusive shopping destinations, fine dining experiences, and vibrant nightlife, ensuring a refined urban lifestyle.
+                <hr>
+                <p>6) Immerse yourself in luxurious amenities such as a private elevator, ample parking solutions, and vigilant security services. Located centrally, indulge in nearby upscale shopping hubs, gourmet dining venues, and lively entertainment options, perfect for a sophisticated city living experience.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">Buyer Prompts</button>
+            </h2>
+            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+              <div class="accordion-body">
+                <p>Whether you desire a serene sanctuary or a cosmopolitan haven, this residence caters to those who cherish life's luxuries. Discover unparalleled elegance and sophistication in this exceptional home.
+                <hr>
+                <p>Whether you seek tranquility or city sophistication, this residence offers the epitome of refined living for discerning individuals. Immerse yourself in luxury and sophistication unlike any other.
+                <hr>
+                <p>Whether you crave seclusion or urban vibrancy, this residence is designed for those who appreciate the finer aspects of life. Explore a lifestyle of unparalleled luxury and elegance.
+                <hr>
+                <p>Whether your preference is for a peaceful retreat or a chic urban setting, this residence caters to individuals who value luxury living. Experience sophistication and comfort at its finest.
+                <hr>
+                <p>Whether you yearn for solitude or the pulse of the city, this residence is crafted for those who appreciate life's finer pleasures. Embrace luxury and sophistication in every detail.
+                <hr>
+                <p>Whether you seek a tranquil escape or an urban sanctuary, this residence embodies the essence of luxury living. Discover unparalleled elegance and sophistication in this exceptional abode.
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+<script src="sell.js"></script>
+</html>

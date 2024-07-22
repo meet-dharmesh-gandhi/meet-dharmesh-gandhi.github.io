@@ -1,0 +1,52 @@
+.closeArea {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: start;
+    padding: 7px;
+    border-radius: 25px;
+    background-color: aquamarine;
+    overflow: hidden;
+    transition: width 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}  
+
+.closeArea p {
+    margin: 0px 5px 0px 10px;
+    display: none;
+    animation: fadeIn 1s forwards;
+}
+
+.closeArea:hover {
+    border: 2px solid black;
+    width: 200px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-right {
+    0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    }
+    100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    }
+}
+@keyframes slide-right {
+    0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    }
+    100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    }
+}
